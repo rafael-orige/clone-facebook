@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+body {
+  background-color: #18191a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  color: #cfd1d6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin: 0 15px;
+  height: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.margin-container {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.navigation-area {
+  width: 300px;
+}
+
+.facebook-feed {
+  width: 680px;
+}
+
+.facebook-feed .stories {
+  padding-top: 20px;
+}
+
+.create-post {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #242526;
+  margin-top: 20px;
+  padding: 12px 0;
+}
+
+.create-post .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #3a3b3c;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.input-area .create-post--profile {
+  display: flex;
+  align-items: center;
+}
+
+.input-area img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.input-area input {
+  background-color: #3a3b3c;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 100%;
+  color: #a6a9ae;
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+}
+
+.input-area input:hover {
+  background-color: #4e4f50;
+}
+
+.input-area input::placeholder {
+  color: #a6a9ae;
+  font-size: 15px;
+}
+
+.post-options {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.post-options .option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-basis: 100%;
+  border-radius: 10px;
+  transition: all ease-in-out 0.1s;
+  padding: 10px 0;
+}
+
+.post-options .option:hover {
+  background-color: #3a3b3c;
+}
+
+.option svg {
+  margin-right: 15px;
+  transform: scale(1.5);
+}
+
+.post-options .option p {
+  margin: 0;
+}
+
+.messenger {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.messenger-fixed {
+  position: fixed;
+  width: inherit;
+}
+
+.messenger h1 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #adb0b5;
+  margin-left: 10px;
+}
+
+.messenger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.messenger-icons {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.messenger-icons svg {
+  fill: #adb0b5;
+  cursor: pointer;
+}
+
+.load-watch {
+  width: 45px;
+  height: 45px;
+}
+
+@media (max-width: 1366px) {
+  .navigation-area {
+    width: 250px;
   }
 }

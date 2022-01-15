@@ -1,0 +1,94 @@
+.navigation-menu--fixed {
+  position: fixed;
+  width: inherit;
+  height: inherit;
+}
+
+.navigation-menu--fixed footer {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #9a9ca0;
+  position: absolute;
+  bottom: -100px;
+}
+
+.navigation-menu--fixed footer p {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.navigation-menu--fixed footer p:hover:not(.last-text) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navigation-menu--fixed footer span {
+  margin-right: 5px;
+}
+
+.navigation-menu--list {
+  list-style-type: none;
+  padding: 0;
+  width: inherit;
+}
+
+.navigation-menu--list h2 {
+  color: #a9acb2;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.navigation-menu--list:first-child {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444546;
+}
+
+.navigation-menu--list li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e5e7eb;
+  cursor: pointer;
+  padding: 0px 10px 0px 5px;
+  margin-left: -5px;
+  border-radius: 10px;
+  transition: background-color ease-in-out 0.2s;
+}
+
+.navigation-menu--list li:hover {
+  background-color: #2f3031;
+}
+
+.navigation-menu--list li img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navigation-menu--list li .groups {
+  border-radius: 10px;
+}
+
+.navigation-menu--list li .more-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #2f3031;
+  transition: background-color ease-in-out 0.2s;
+}
+
+.navigation-menu--list li:hover .more-icon {
+  background-color: #444546;
+}
+
+.navigation-menu--list li .more-icon svg {
+  fill: #e4e6eb;
+}

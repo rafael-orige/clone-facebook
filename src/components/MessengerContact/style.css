@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: #2f3031;
+}
+
+.contact img {
+  border-radius: 50%;
+  width: 36px;
+  margin-right: 10px;
+}
+
+.contact p {
+  font-weight: 500;
+}
